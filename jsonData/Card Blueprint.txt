@@ -1,0 +1,53 @@
+"cardType": ( attack , move , parry , block )
+"cards":[
+    "name":"name of card"
+                    
+    "weigth": ( 1 , 2...n)
+    "playDuration": ( 0 , 1 , 2)
+    "text":"Description"
+
+    //attack              
+    "attackData":    
+        {
+            "damage":5
+            "times":1
+            "damageType": ( physical , statusEffect )
+            "pattern": ( tile , target )
+            "range":1
+
+            "statusEffect":[
+                {
+                
+                }
+            ]
+        }
+
+    //move
+    "moveData":      
+        {
+            "movePos":null
+            "range":1
+        }
+
+    //parry
+    "parryData":         
+        {
+            "name":"Ripost",
+            "cardType":"attack",
+            "attackData":
+            {
+                "damage":4,
+                "damageType":"physical",
+                "times":1,
+                "statusEffect":[]
+            }                   
+        }
+    
+    //block
+    "blockData":
+    {
+        "blockValue":10,
+    }
+]
+            
+        

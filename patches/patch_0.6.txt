@@ -1,0 +1,60 @@
+|Fixed|
+
+    Date : 23/5-2021
+
+    [Gameplay]
+
+        <Player>
+
+            *Heal after encounter 12 -> 6 
+
+        <Enemies>
+
+            * Enemies try to avoid hitting eachother
+
+            2x New enemies
+
+                + Hooded Servant
+
+                    Health: 28
+                    
+                    "Husks whom retains a sliver of humanity, condemnd to guard the swamp for ever"
+
+                    Cards:
+
+                        1x Block
+                        
+                        1x Lungh
+                            "Move 1 and deal 6 damage"
+
+                        1x Frantic Stab 
+                            "Deal 1 times X frenzy damage"
+
+                        2x Step 
+                            "Movedistance 2"
+            
+
+                + Disfigured Rodent
+
+                    Health: 18
+
+                    "The scouering crawlers of the swamp"
+
+                    Cards:
+
+                        1x Ravenous bite
+                            "Deal 8 times 2 damage, apply 2 bleed and 2 weak"
+
+                        1x Scratch
+                            "Deal 5 damage, apply 1 bleed
+
+                        3x Step
+                            "Movedistance 4"
+
+        <statusEffects>
+
+            + Frenzy
+                increments at the end of a set 
+
+            + Weak
+                deal 25% less damage, goes down by one after each set

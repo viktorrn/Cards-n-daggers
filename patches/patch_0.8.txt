@@ -1,0 +1,77 @@
+|Fixed|
+
+    Date: 6/6-2021
+
+    <Gameplay>
+
+        <Player>
+
+            Saguiana:
+
+                New Cards:
+
+                + Open Wounds 
+                    "Proc all enemies bleed"
+
+                
+
+                *Starting Hand
+
+                The starting hand now consists of:
+                        
+                        *3x -> 2x Stab
+                        *1x -> 2x Pistol Shot
+                        
+
+                        1x Block
+                        
+                        1x Step
+                        1x Dash
+
+                        +1x Open Wound
+
+                *Sharpen Removed                        
+                        
+
+    <UI>
+
+        Icons for Frenzy, Mark & Weaken
+
+    <Backend nerd stuff>
+        Starting Hand now loaded and saved in json file,
+        Preping for first versions of deck building
+
+
+|Balance patch|
+
+    Date: 7/6-2021
+
+    <Gameplay>
+
+        <Player>
+
+            Saguiana:
+                
+
+                *Starting Hand
+
+                The starting hand now consists of:
+                        
+                        2x Stab
+                        2x Pistol Shot
+                        
+
+                        *1x->2x Block
+                        
+                        1x Step
+                        1x Dash
+
+                        1x Open Wound
+        
+        <Enemies>
+
+            Hunter:
+
+                Arrow Rain:
+                    *Priority: 1->2
+

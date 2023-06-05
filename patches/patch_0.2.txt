@@ -1,0 +1,16 @@
+Fixed stuff:
+
+- Gameplay
+    - Bleed debuff and the first iteration of the debuff innerworkings
+
+- Enemies
+        
+
+- UI
+    - Cards no longer appear behind board
+    - Cards now have Type Icons
+    - Fixed Bug with player attack card pointing towards the sky
+    - Hover enemies to see active debuffs as well as value of said debuff
+
+- Nerfs
+    - Slasher Quick Stab playduration increased from 0 to 1

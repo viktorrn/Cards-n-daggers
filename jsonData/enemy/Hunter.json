@@ -1,0 +1,94 @@
+{
+    "name":"Hunter",
+    "type":"entity",
+    "entityType":"Enemy",
+
+    "health":19,
+    "color":"#701f09",
+
+    "imgPath":"../art/characters/hunter.png",
+    "rank":1,
+    "preferredRange":4,
+
+    "salary":3,
+
+    "statusEffects":[
+    ],
+
+    "cards":[
+        {
+            "cardType":"attack",
+            "cards":[
+                {
+                    "name":"Hunters Mark",
+                    "weigth":1,
+                    "playDuration":2,
+                    "text":"Mental. Apply 2 Mark",
+
+                    "cost":2,
+
+                    "attackData":{
+                        "damage":0,
+                        "times":1,
+                        "damageType":"mental",
+                        "pattern":"tile",
+                        "range":4,
+
+                        "statusEffect":[
+                            {
+                                "name":"mark",
+                                "value":2
+                            }
+                        ]
+                    }
+
+                },{
+                    
+                    "name":"Arrow Rain",
+                    "weigth":2,
+                    "playDuration":1,
+                    "text":"Deal {damage} times 3 damage",
+
+                    "cost":2,
+
+                    "attackData":{
+                        "damage":2,
+                        "times":3,
+                        "damageType":"physical",
+                        "pattern":"tile",
+                        "range":4,
+
+                        "statusEffect":[]
+                    }
+
+                }
+                
+            ]
+        },
+        
+        {
+
+            "cardType":"move",
+            "cards":[
+                {
+                    "name":"Dash & Roll",
+
+                    "weigth":1,
+                    "playDuration":0,
+                    "text":"Movedistance {step}",
+
+                    "cost":1,
+
+                    "moveData":
+                    
+                        {
+                            "movePos":null,
+                            "range":2
+                        }
+    
+                   
+                }
+            ]
+        }
+    ]
+}

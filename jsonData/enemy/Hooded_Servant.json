@@ -1,0 +1,129 @@
+{
+    "name":"Hooded Servant",
+    "type":"entity",
+    "entityType":"Enemy",
+
+    "health":28,
+    "color":"#701f09",
+
+    "imgPath":"../art/characters/Hooded_Servant.png",
+    "rank":2,
+    "preferredRange":1,
+    
+    "salary":3,
+
+    "statusEffects":[
+        {
+            "name":"frenzy",
+            "value":1
+        }
+    ],
+
+    "cards":[
+        {
+           "cardType":"attack",
+            "cards":[
+                {
+                    "name":"Lunge",
+
+                    "weigth":1,
+                    "playDuration":1,
+                    "text":"Move {step} and deal {damage} damage",
+                    
+                    "mutation":[
+                        {
+                            "cardType":"move",
+                            "moveData":
+                            {
+                                "movePos":null,
+                                "range":1
+                            }
+                        },
+                        {
+                            "cardType":"attack",
+                            "attackData":
+                            {
+                                "damage":6,
+                                "times":1,
+                                "damageType":"physical",
+                                "pattern":"tile",
+                                "range":1,
+    
+                                "statusEffect":[]
+                            }
+                        }
+                    ]
+                    
+                   
+                },
+                {
+                    "name":"Frantic Stab",
+                    
+                    "weigth":2,
+                    "playDuration":1,
+                    "text":"Deal {damage} times X frenzy damage",
+                    
+                    "cost":1,
+
+                    "attackData":{
+                        "damage":1,
+                        "times":1,
+                        "damageType":"physical",
+                        "pattern":"tile",
+                        "range":1,
+
+                        "statusEffect":[
+                         
+                        ]
+                    }
+
+
+
+                }
+            ]
+        },{
+            "cardType":"move",
+            "cards":
+            [
+                {
+                    "name":"Dash & Roll",
+
+                    "weigth":2,
+                    "playDuration":1,
+                    "text":"Movedistance {step}",
+
+                    "cost":1,
+
+                    "moveData":
+                    
+                        {
+                            "movePos":null,
+                            "range":2
+                        }
+    
+                   
+                }
+            ]
+        },{
+            "cardType":"block",
+            "cards":
+            [
+                {
+                    "name":"Block",
+                    "weigth":1,
+                    "playDuration":0,
+                    "text":"block all damage",
+                    
+                    "cost":1,
+
+                    "blockData":{
+                        "type":"block",
+                        "range":1
+                    }
+                }
+                
+            ]
+        }
+    ]
+
+}

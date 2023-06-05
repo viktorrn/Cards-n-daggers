@@ -1,0 +1,8 @@
+
+"name":"Sanguiana",
+"type":"entity",
+"entityType":"Player",
+
+"health": 40,
+"color":"purple",
+"cards":[ ] 

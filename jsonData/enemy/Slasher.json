@@ -1,0 +1,146 @@
+{
+    "name":"Slasher",
+    "type":"entity",
+    "entityType":"Enemy",
+
+    "health":24,
+    "color":"#701f09",
+
+    "imgPath":"../art/characters/Slasher.png",
+    "rank":1,
+    "preferredRange":1,
+
+    "salary":5,
+
+    "statusEffects":[],
+
+    "cards":[
+        {
+            "cardType":"attack",
+            "cards":
+            [
+                {   
+                    "name":"Slash",
+                    
+                    "weigth":2,
+                    "playDuration":1,
+                    "text":"Deal {damage} damage, apply 1 bleed",
+                    
+                    "cost":1,
+
+                    "attackData":
+                    
+                        {
+                            "damage":5,
+                            "times":1,
+                            "damageType":"physical",
+                            "pattern":"tile",
+                            "range":1,
+
+                            "statusEffect":[
+                                {
+                                    "name":"bleed",
+                                    "value":1
+                                }
+                            ]
+                        }
+
+                },{   
+                    "name":"Jab",
+
+                    "weigth":2,
+                    "playDuration":2,
+                    "text":"Deal {damage} damage",
+
+                    "cost":3,
+
+                    "attackData":
+                        
+                        {
+                            "damage":9,
+                            "times":1,
+                            "damageType":"physical",
+                            "pattern":"tile",
+                            "range":2,
+
+                            "statusEffect":[]
+                        }
+
+                }, {   
+                    "name":"Quick Stab",
+                    
+                    "weigth":2,
+                    "playDuration":1,
+                    "text":"Deal {damage} damage, critical on bleeding target",
+
+                    "cost":2,
+
+                    "attackData":
+                    
+                        {
+                            "damage":4,
+                            "times":1,
+                            "damageType":"physical",
+                            "pattern":"tile",
+                            "range":1,
+
+                            "statusEffect":[
+                                {
+                                    "name":"critical",
+                                    "value":2,
+                                    "targetCondition":"bleed"
+                                }
+                            ]
+                        }
+
+                }  
+            ]
+        },{
+            "cardType":"move",
+            "cards":
+            [
+                {
+                    "name":"Step",
+
+                    "weigth":4,
+                    "playDuration":1,
+                    "text":"Movedistance {step}",
+
+                    "cost":1,
+
+                    "moveData":
+                    
+                        {
+                            "movePos":null,
+                            "range":3
+                        }
+    
+                   
+                }
+            ]
+        },{
+            "cardType":"state",
+            "cards":[
+                
+                {
+                    "name":"Sharpen",
+                    "weigth":1,
+                    "playDuration":0,
+                    "text":"Apply 2 Sharpen",
+                    
+                    "cost":1,
+
+                    "stateData":{
+                        "range":2,
+                        "statusEffect":[
+                            {
+                                "name":"sharpen",
+                                "value":2
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

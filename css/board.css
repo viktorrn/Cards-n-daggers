@@ -1,0 +1,164 @@
+
+#sample-img{
+    position:absolute;
+    width:100px;
+}
+/*board entities*/
+
+    .board-entity{
+        /*top:calc(var(--scale) * 100px);*/
+        width:calc(var(--scale) * 100px);
+        height:calc(var(--scale) * 100px);
+        position: absolute;
+    }
+
+
+    .board-entity .character{
+        position: absolute;
+        transform: translate(10%,-30%);
+        width: calc(var(--scale) * 100px);
+        pointer-events: none;
+    }
+
+    .board-entity #type img{
+        position: absolute;
+        width:calc(var(--scale) * 30px);
+        
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);  
+    }
+
+    .board-entity #type{
+        
+        position: absolute;
+        width:calc(var(--scale) *30px);
+        height:calc(var(--scale) *30px);
+
+
+        margin-left: calc(var(--scale) *0px);
+        margin-top:calc(var(--scale) *70px);
+        overflow: visible;
+
+        border-radius: 50%;
+        border: 3px solid rgb(12, 12, 12);
+        background-color: rgb(214, 214, 214);
+    }
+
+    .board-entity #health{
+        position: absolute;
+        
+        width:calc(var(--scale) * 30px);
+        height:calc(var(--scale) * 30px);
+        
+        border-radius: 50%;
+        border: 3px solid black;
+        background-color: rgb(165, 73, 57);
+        
+        margin-left: calc(var(--scale) * 70px);
+        margin-top:calc(var(--scale) * 70px);
+
+        text-align: center;
+        line-height: calc(var(--scale) * 28px);
+        font-size: calc(var(--scale) * 1em);
+        color: rgb(241, 241, 241);
+        
+  
+    }
+
+    .board-entity .statusEffects{
+        width: 2px;
+        height: 2px;
+                
+        
+        position: relative;
+        left:50%;
+        top: -40px;
+        padding:0;
+        
+        overflow: visible;
+
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .board-entity .statusEffects #effectContainter{
+        min-width: calc(var(--scale) * 30px);
+        min-height: calc(var(--scale) * 30px);
+        margin: 0 9px 0 9px;
+        overflow: visible;
+        
+        position:relative;
+        
+    }
+
+    .board-entity .statusEffects #effectContainter div{
+        position:absolute;
+        font-size: 2.5em;
+        font-weight: bold;
+
+        line-height: 20px;
+        
+        margin:  0;
+        padding: 0;
+        
+        right: -20;
+        bottom: -10;
+
+        border-radius: 10px;
+        text-align: center;
+   
+        width: 20px;
+        height: 20px;
+ 
+        -webkit-text-stroke: 1px #161616;
+    }
+
+    .board-entity .statusEffects div img{
+        width: 40px;
+        height: 40px;
+        right: 0;
+        bottom: -10;
+    }
+
+/*board*/
+
+    #board, #interact-board{
+        position: fixed;
+        top: 150px;
+        left: 150px;
+        font-size: 1em;
+        padding:0;
+        border-collapse: collapse;
+    }
+
+    #board td, #interact-board td{
+        padding:0;
+        margin:0;
+        width: calc(var(--scale) *100px);
+        height: calc(var(--scale) *100px);
+    }
+
+    #board td{
+        border: 3px solid rgb(53, 51, 51, 0.7);
+    }
+
+    #interact-board td{
+        border: 3px solid rgb(53, 51, 51, 0);
+        
+    }
+
+
+    #board tr, #interact-board tr{
+        padding:0;
+        margin:0;
+    }
+
+    #interact-board{
+        z-index: 1;
+    }
+
+    #board{
+        z-index: -1;
+    }

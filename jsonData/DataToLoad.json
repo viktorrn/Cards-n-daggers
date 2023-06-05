@@ -1,0 +1,11 @@
+{
+    "src":[
+        "./statusEffects/statusEffects.json",
+        "./player/Sanguiana.json",
+        "./enemy/Slasher.json",
+        "./enemy/Hooded_Servant.json",
+        "./enemy/Disfigured_Rat.json",
+        "./enemy/Hunter.json"
+        
+    ]
+}

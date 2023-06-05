@@ -1,0 +1,245 @@
+
+
+/*Card*/
+
+
+    .Card{
+        /*box-shadow: 0px 0px 3px 3px pink;*/
+
+        transform: scale(1,1),height;
+        transition: transform 0.1s, height 0.1s;
+        transition-timing-function: cubic-bezier(0,0.90,0.90,1);
+    
+        position: relative;
+
+        color:rgb(243, 241, 241);
+        background-color: var(--cardBrown);
+        width: calc(var(--scale) * 154px);
+        height: calc(var(--scale) * 236px);  
+         
+        border-radius: 3px;
+        z-index: 3;
+
+    }
+
+    .Card .type{
+        
+        position: fixed;
+        background-color: rgb(214, 214, 214);
+        border: 3px solid var(--cardBrown);
+        top: calc(var(--scale) *-10px);
+        right: calc(var(--scale) *-10px);
+
+        width: calc(var(--scale) *40px);
+        height: calc(var(--scale) *40px);
+        
+        border-radius: 50%;
+
+        
+        text-align: center;
+    }
+    .Card .type img{
+
+        width:calc(var(--scale) *42px);
+        top:50%;
+        left:50%;
+    }
+
+    .Card .playDuration{
+        background-color: rgb(102, 122, 68);
+        width:calc(var(--scale) *40px);
+        height:calc(var(--scale) *40px);
+        border-radius: 50%;
+        border: 3px solid var(--cardBrown);
+
+        position: fixed;
+        
+        top: calc(var(--scale) * -10px);
+        left: calc(var(--scale) *-10px);
+
+        font-size: calc(var(--scale) *1.4em);
+        text-align: center;
+        line-height: calc(var(--scale) *36px);
+        
+    }
+
+    .data-container{
+        height: inherit;
+        width: calc(var(--scale) * 154px);
+        overflow: hidden;
+    }
+
+    .Card .img{
+        display: inline-block;
+        width: calc(var(--scale) *154px);
+        height: calc(var(--scale) *96px);
+        
+        border-radius: 2px;
+        background-color: rgb(165, 161, 129);
+        overflow:hidden;
+        z-index: -1;
+        position: absolute;
+    }
+
+    .Card .name{
+        position: absolute;
+        top: calc(var(--scale) * 96px);
+        
+        text-align: center;
+        width: 100%;
+        margin-top: 1px;
+        font-size: 1.1em;
+        letter-spacing: 1px;
+        z-index: 1;
+
+        
+    }
+
+    .Card .cardNamePlate{
+        width: calc(var(--scale) * 174px);
+        height: calc(var(--scale) * 60px);
+        top: calc(var(--scale) * 82px);
+        left: calc(var(--scale) *-12px);
+        position: absolute;
+        z-index:0;
+        background-image: url('../art/card/NamePlate.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+
+    .Card .cardFooter{
+        position: absolute;
+        width: calc(var(--scale) * 166px);
+        height: calc(var(--scale) * 40px);
+        bottom: -12;
+
+        left: calc(var(--scale) *-6px);
+        background-image: url('../art/card/CardFoot.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    .Card .rareCardNamePlate{
+        width: calc(var(--scale) * 174px);
+        height: calc(var(--scale) * 60px);
+        top: calc(var(--scale) * 82px);
+        left: calc(var(--scale) *-12px);
+        position: absolute;
+        z-index:0;
+        background-image: url('../art/card/RareNamePlate.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    .Card .rareCardFooter{
+        position: absolute;
+        width: calc(var(--scale) * 166px);
+        height: calc(var(--scale) * 40px);
+        bottom: -12;
+
+        left: calc(var(--scale) *-6px);
+        background-image: url('../art/card/RareCardFoot.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    .Card .cardHeader{
+        position: absolute;
+        left:50%;
+        bottom: -18px;
+        transform: translateX(-50%);
+        z-index: 1;
+
+        width: calc(var(--scale) * 50px);
+        height: calc(var(--scale) * 50px);
+
+        background-image: url('../art/favicon.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    .Card .text{
+       
+        margin: calc(var(--scale) *10px) calc(var(--scale) *6px);
+        position: relative;
+
+        font-size: calc(var(--scale) *0.8em);
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+        letter-spacing: 0.6px;
+
+        top: calc(var(--scale) * 140px);
+    }
+
+/*drop sections*/
+
+    #playCard{
+        position: fixed;
+        top:0;
+        width:100%;
+        height:70%;
+        z-index: -3;
+    }
+
+    #removeCard{
+        position: fixed;
+        top:70%;
+        width:100%;
+        height:30%;
+    }
+
+/*Card Display overlay*/
+
+
+
+    #cardDisplayOverlay, #win-overlay{
+        width: 100%;
+        position: fixed;
+        height: 105%;
+
+        background-color: rgba(41, 42, 43, 0.95);
+
+        top:0;
+        left:0;
+        z-index: 200;
+        visibility: hidden;
+    }
+    #cardDisplayOverlay{
+        z-index: 201;
+    }
+    #cardDisplayOverlay #cardDisplay-content{
+        background-color: rgb(109, 104, 104);
+        position: absolute;
+        left:10%;
+        bottom: calc(var(--scale) *80px);
+        width: 80%;
+        height: 90%;
+
+        margin: 0;
+        padding: 0;
+        overflow-y: scroll;
+        overflow-x: visible;
+
+        
+    }
+
+    #cardDisplayOverlay #back{
+        position: absolute;
+        left:calc(var(--scale) *20px);
+        bottom: calc(var(--scale) *120px);
+        margin:0;
+        padding: 0;
+    }
+
+    #overlayCardList{
+        margin: calc(var(--scale) *60px) 30px;
+        width: 100%;
+    }
+
+    #overlayCardList .card{
+        float: left;
+        margin:calc(var(--scale) * 20px);
+    }
+
+

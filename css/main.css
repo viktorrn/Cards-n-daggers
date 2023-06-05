@@ -1,0 +1,348 @@
+@font-face{
+    font-family: "GamerFont";
+    src: url("./fonts/AKT.ttf") format("truetype");
+
+    font-family: "AmaticSC";
+    src: url("./fonts/AmaticSC-Bold.ttf") format("truetype");
+
+    font-family: "BW";
+    src: url("./fonts/BW.ttf") format("truetype");
+    
+  }
+
+*{
+    font-family: "BW";
+    font-stretch: expanded;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+body{
+    margin:0;
+    padding:0;
+    
+    backface-visibility: visible;
+    background-color:rgb(224, 212, 197);
+    transform: scale(1,1);
+    overflow: hidden;
+}
+
+:root{
+    --cardBrown: rgb(41, 41, 41);
+    --scale:0.8;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+    
+}
+
+#background{
+    background-position: center;
+    background-image: url("../art/backgrounds/sw1.png");
+    opacity: 0.9;
+    box-shadow: inset 0px -150px 150px 0px #000000;
+}
+
+/*button*/
+
+button{
+    cursor: pointer;width: 120px;height:70px;z-index: 26;font-size: 1.2em;vertical-align: center;border-radius: 7px;
+    transition: transform 0.15s, border 0.1s;
+    transition-timing-function: cubic-bezier(.17,.42,.12,2);    
+    
+}
+
+button:hover{
+    border:4px solid black;
+    transform: scale(1.1,1.1);
+}
+
+/*action Log*/
+
+    #actionLog{
+        position: Fixed;
+        top: 100px;
+        right: 0;
+        z-index: 200;
+        background-color: rgb(228, 214, 197);
+        box-shadow: -5px 2px 10px 1px rgba(71, 71, 68, 0.7);
+        font-size: 1.1em;
+
+      
+ 
+    }
+
+    #actionLog #head{
+        
+        text-align: center;
+
+        width: 100%;
+        height: 50px;
+
+        background-color: rgb(131, 91, 73);
+        box-shadow: 0 2px 10px 1px rgba(71, 71, 68, 0.7);
+        
+    }
+
+    #actionLog #head span{
+        color:white;
+        margin: 40px 20px 0 20px
+    }
+
+    #actionLog #actions{
+    
+        
+        max-height: 460px;
+        overflow-y: scroll;
+        display: none;
+        
+    }
+
+    #actions li{
+        margin: 20px 10px 20px 10px;
+        font-size: 1em;
+    }
+
+   
+
+    #actionLog #head:hover{
+        width: 600px;
+    }
+
+    #actionLog #head:hover + #actions{
+        display: inline-block;
+        width: 600px;
+    }
+
+    #actionLog #actions:hover{
+        display: inline-block;
+        width: 600px;
+    }
+
+    #actionLog #actions:hover + #head{
+        width: 600px;
+    }
+
+    
+
+ 
+
+
+
+/*other stuff*/
+
+    #endSet{
+        position: fixed; 
+        right:0;
+        top:70%;
+    }
+
+    #dev-menu{
+        position: relative;
+        top: 15; 
+        left: 300;
+        z-index: 100;
+    }
+
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding:0;
+    }
+
+
+/*line*/
+
+#line{
+    z-index: 100;
+    position: fixed;
+    height: 5px;
+    background-color: #FCCD5F;
+    border: 2px solid rgb(44, 44, 44);
+    border-radius: 5px;
+}
+
+#handline{
+    z-index: 100;
+    position: fixed;
+    height: 5px;
+    background-color: #FCCD5F;
+    border: 2px solid rgb(44, 44, 44);
+    border-radius: 5px;
+}
+
+#dot{
+    z-index: 50;
+    position: fixed;
+    height:5px;
+    width:5px;
+    background-color: #332f26;
+    border: 2px solid rgb(44, 44, 44);
+    border-radius: 50%;
+    
+}
+
+#actionIcon{
+    position: fixed;
+    width:30px;
+    height:30px;
+    z-index: 50;
+    background-color: ivory;
+    border-radius: 50%;
+    border: 2px solid rgb(44, 44, 44);
+    overflow: visible;
+}
+
+#actionIcon img{
+    width:100%;
+    height:100%;
+}
+
+/*win screen*/
+
+    #win-overlay #bitch-dead, #win-overlay #card-selector{
+
+        margin: 0 auto;
+        
+        position: fixed;
+        top:100px;
+        left:50%;
+        transform: translateX(-50%);
+
+        min-width: 800px;
+        max-width: 1000px;
+        width:60%;
+        height:800px;
+
+        z-index: 200;
+        background-color: #6b6659;
+
+       
+        border-radius: 20px;
+        box-shadow: inset 0px -150px 150px 0px #252525;
+    
+    }
+
+    #win-overlay #card-selector{
+        visibility: hidden;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    #win-overlay #bitch-dead #he-dead, #win-overlay #card-selector #he-dead{
+
+        
+        width:100%;
+        height: 80px;
+        color:#fff; 
+        font-size: 4em;
+        text-align: center;
+        z-index: 1;
+        
+        position: absolute;
+    }
+
+    #win-overlay #bitch-dead #deader-header,  #win-overlay #card-selector #deader-header{
+        background-image: url('../art/UI/MessagePlate.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+
+        position: absolute;
+        top:-60px;
+        left:-5%;
+        width:110%;
+        height: 200px;
+        z-index: 0;
+
+    }
+
+    #win-overlay #bitch-dead #deader-footer,  #win-overlay #card-selector #deader-footer{
+        background-image: url('../art/UI/Foot.png');
+        background-size: 99% 100%;
+        background-repeat: no-repeat;
+
+        position: absolute;
+        bottom:-60px;
+        left:-4%;
+        width:108%;
+        height: 200px;
+        z-index: 0;
+
+    }
+
+    #win-overlay #bitch-dead #go-next, #win-overlay #card-selector #go-back{
+        position: absolute;
+        width:60%;
+        margin: 0 20%;
+        border-radius: 10px;
+        background-color: rgb(123, 175, 158);
+        bottom:100px;
+        
+    }
+
+    #win-overlay #card-selector #card-option-list{
+        position: absolute;
+        top:250px;
+        transform: scale(1.4,1.4);    
+        
+    }
+
+    #win-overlay #card-selector #card-option-list .card{
+        margin: 0 20px;
+        display:inline-block;
+        
+    }
+
+
+    #win-overlay #bitch-dead #loot-list{
+        position: absolute;
+        top:250px;
+        width:90%;
+        margin-left:5%;
+    }
+
+    #win-overlay #bitch-dead #loot-list li{
+        width:100%;
+        height: 100px;
+        font-size: 3em;
+        margin: 0 0 20px 0;
+        background-color: #8a8680;
+        border-radius: 10px;
+        color:#fff;
+
+        line-height: 100px;
+        transition: transform 0.15s, border 0.1s;
+        transition-timing-function: cubic-bezier(.17,.42,.12,2);    
+    }
+
+    #win-overlay #bitch-dead #loot-list li:hover{
+        transform: scale(1.05,1.05);
+    }
+
+
+    #win-overlay #bitch-dead #score{
+        position: absolute;
+        
+        width:100%;
+        text-align: center;
+        top:120px;
+        font-size: 6em;
+        color:lavender;
+
+      
+    }
+
+    #skull-icon{
+        position: fixed;
+        width: 200px;
+        height: 200px;
+        left:50%;
+        transform: translateX(-50%);
+        bottom:-100px;
+
+        background-image: url('../art/favicon.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }

@@ -1,0 +1,14 @@
+11/04/2021
+
+Fixed stuff:
+
+- Domain CardsAndDaggers.com, *registred*
+
+- Enemies
+    - target selection now works as intended
+    - attack card that wont hit, doesnt get played
+
+- UI
+    - Eventlog emptied after encounter ends
+    - Favicon
+    - Hovered cards in ActionList displays range as well as intent  

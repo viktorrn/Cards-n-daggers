@@ -1,0 +1,6 @@
+{
+    "src":[
+        "./player/Sanguiana.json",
+        "./enemy/Slasher.json"
+    ]
+}

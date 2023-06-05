@@ -1,0 +1,104 @@
+{
+    "name":"Disfigured Rodent",
+    "type":"entity",
+    "entityType":"Enemy",
+
+    "health":15,
+    "hp":15,
+    "color":"#701f09",
+
+    "imgPath":"../art/characters/Disfigured_Rodent.png",
+    "rank":3,
+    "preferredRange":1,
+    
+    "salary":4,
+    
+    "statusEffects":[
+    ],
+
+    "cards":[
+        {
+            "cardType":"attack",
+            "cards":[
+                {
+                    "name":"Ravenous bite",
+
+                    "weigth":1,
+                    "playDuration":2,
+                    "text":"Deal {damage} times 2 damage, apply 2 bleed and 2 weak",
+
+                    "cost":2,
+
+                    "attackData":{
+                        "damage":4,
+                        "times": 2,
+                        "damageType":"physical",
+                        "pattern":"tile",
+                        "range":1,
+
+                        "statusEffect":[
+                            {
+                                "name":"bleed",
+                                "value":1
+                            },{
+
+                                "name":"weak",
+                                "value":1
+                            }
+                        ]
+                    }
+                },{
+
+                    "name":"Slash",
+
+                    "weigth":1,
+                    "playDuration":1,
+                    "text":"Deal {damage} damage, apply 1 bleed",
+
+                    "cost":1,
+
+                    "attackData":{
+                        "damage":5,
+                        "times": 1,
+                        "damageType":"physical",
+                        "pattern":"tile",
+                        "range":1,
+
+                        "statusEffect":[
+                            {
+                                "name":"bleed",
+                                "value":1
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+
+        {
+            "cardType":"move",
+            "cards":
+            [
+                {
+                    "name":"Far step",
+
+                    "weigth":3,
+                    "playDuration":1,
+                    "text":"Movedistance {step}",
+
+                    "cost":2,
+
+                    "moveData":
+                    
+                        {
+                            "movePos":null,
+                            "range":4
+                        }
+    
+                   
+                }
+            ]
+        }
+
+    ]
+}

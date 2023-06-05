@@ -1,0 +1,119 @@
+<html>
+    <head>
+        
+        <!--<div class="Card">
+            <div class="type"></div>
+            <div class="cardHeader"></div>
+            <div class="playDuration"></div>
+
+            <div class="img"></div>
+            <div class="name">Hip Fire</div>
+            <div class="cardNamePlate"> </div>
+
+            <div class="text">
+                card does this card does this card does this
+            </div>
+            <div class="cardFooter"> </div>
+            
+        </div>-->
+
+        <!--<script type="module" src="JavaScript/cards.js"></script>-->
+        <link rel="icon" type="image/png" href="./art/favicon.png"/>
+
+        <link rel="stylesheet" href="./css/main.css"></link>
+        <link rel="stylesheet" href="./css/board.css"></link>
+        <link rel="stylesheet" href="./css/card.css"></link>
+        <link rel="stylesheet" href="./css/topUI.css"></link>
+        <link rel="stylesheet" href="./css/hand.css"></link>
+        <link rel="stylesheet" href="./css/actionList.css"></link>
+        <link rel="stylesheet" href="./css/UI.css"></link>
+
+    </head>
+    <body>
+        <!--<div id="toolTip">ToolTip Text ToolTip Text ToolTip Text</div>
+        <img id="sample-img" src="art/characters/slasher.png"></img>-->
+        
+        
+
+        <div id="background"></div>
+        <div id="nav"></div>
+        <div id="encsLeft"></div>
+
+        <!--<div id="enemy-div"></div>-->
+        <div id="entdiv"><ul id="entities"></ul></div>
+        
+        <div id="actionLog">
+            <div id="head"><span>Encounter Log</span></div>
+            <ul id="actions"></ul>
+        </div>
+
+        <div id="dev-menu">
+            <button id="begin">Begin Run</button>
+            <button id="end">End Run</button>
+        </div>
+
+        <div id="tot-score">Total score: 0</div>
+        <a href="patches/patch_0.9.txt" target="_blank"><button id="patchNotes">Patch Notes</button></a>
+       
+
+        <div id="actionDiv">
+            <ul id="actionList"></ul>
+        </div>
+
+        <table id="board"></table>
+        <table id="interact-board"></table>
+
+        <div id="card-drop-zones">
+            <div id="playCard"></div>
+            <div id="removeCard"></div>
+        </div>
+
+        <button id="show-deck">Show Deck</button>
+        <button id="endSet">End Turn</button>
+
+        <div id = "hand-section">
+            <div id="show-drawPile"></div>
+
+            <div class="hand"></div>
+
+            <div id="show-discardPile"></div>
+            <button id="show-shatterPile">ShatterPile</button>
+        </div>
+
+        <div id="cardDisplayOverlay">
+            <button id="back">Return</button>
+            <div id="cardDisplay-content">
+                <div id="overlayCardList"></div>
+            </div>
+        </div>
+        
+        <div id="win-overlay">
+            
+            <div id="bitch-dead">                
+                <div id="he-dead">He deaded</div>
+                <div id="deader-header"></div>
+
+                <ul id="loot-list">
+                </ul>
+                <button id="go-next">Go next</button>
+
+                <div id="deader-footer"></div>
+                <div id="skull-icon"></div>
+
+            </div>
+
+            <div id="card-selector">
+                <div id="he-dead">Select a Card</div>
+                <div id="deader-header"></div>
+
+                <div id="card-option-list"></div>
+                <button id="go-back">Skip</button>
+
+                <div id="deader-footer"></div>
+                <div id="skull-icon"></div>
+            </div>
+        </div>
+
+        <script type="module" src="./js/main.js"></script>
+    </body>
+</html>

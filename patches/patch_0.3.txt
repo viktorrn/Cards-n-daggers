@@ -1,0 +1,25 @@
+|Fixed stuff|
+
+    [Gameplay]
+
+        <Player>
+            
+            Saguiana
+                
+                Cards added:
+                    +Reload
+                        "Reloads one bullet"
+            
+                Cards changed:
+                    Hip Fire:
+                        changed
+                            *deal 4 times 1+X ammo
+                        
+                        removed
+                            -Critical on bleeding target
+            
+    [UI] 
+        <Icons>
+            + Bleed debuff now has an Icon
+            + Reload buff now has an Icon
+        

@@ -1,0 +1,11 @@
+ "statusEffect":[
+    {
+        "name": ( bleed , critical , ammo )
+        "type": ( debuff , buff )
+        "effectType": ( use , apply , state , card )
+
+        "procFlag": ( endOfSet , startOfSet , attacked , hit , playedCard)
+        "targetCondition": ( any debuff ) //condition for debuff to apply
+        "valueChange": ( use , endOfSet , static )
+    }
+]

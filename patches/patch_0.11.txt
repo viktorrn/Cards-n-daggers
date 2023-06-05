@@ -1,0 +1,54 @@
+|Stuff to Fix|
+
+    make starting hand contain 2 attack and atleast one move as well as Block
+    Hipfire not doing correct dmg
+    
+    
+
+|Fixed|
+
+    Date: 9/6-2021
+
+    <Gameplay>
+
+        <Card condition>
+
+        <Player>
+
+            Saguiana:
+
+                Added Cards:
+
+                    Common:
+
+                        Hit n Run
+                            "Deal 6 damage and Move 1"
+
+                    Rare:
+                    
+                        
+
+                Starting Hand
+
+                    The starting hand now consists of:
+                        
+                        2x Stab
+                        1x Pistol Shot
+                        1x Hip Fire
+                        
+                        2x Block
+                        
+                        1x Step
+                        1x Dash
+
+
+    
+    
+    <UI>
+
+
+
+    <Backend nerd stuff>
+        enemy action economy
+        mutation cards for player
+        

@@ -1,0 +1,50 @@
+
+|Fixed|
+
+    Date : 10/5-2021
+
+    [UI]
+
+        An actual backdrop and cool card art, less goooo
+
+    [Gameplay]
+
+        <Tick tock, tick tock>
+
+            + Run now ends after 7 encounters, and you heal 12 hp after each encounter
+
+        <Player>
+            
+            Saguiana:
+
+                *Base Health 40 -> 42
+
+                *Starting hand changed
+
+                    The starting hand now consists of:
+                        *2x -> 3x Stab
+                        *1x -> 2x Pistol Shot
+                        1x Block
+                        1x Riposte 
+                        1x Step
+                        1x Dash
+                        
+                        +1x Sharpen
+        
+        <Enemies>
+
+            *can now only spawn on the farthest 3 columns 
+
+            * enemies no longer do wierd stuff set 1
+
+            Slasher:
+
+                + 2x sharpen cards to play with
+
+
+    [Backend nerd stuff]
+        
+        Enemies now target the best possible location with tile-based attack cards, this means that if the player it
+        out of reach, it will target what it is the closest tile to the player 
+    
+        

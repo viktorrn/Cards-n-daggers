@@ -1,0 +1,33 @@
+{ 
+    "name":"Tumble",
+
+    "weigth":1,
+    "playDuration":1,
+    "text":"Move {step} and deal {damage} damage",
+    
+    "mutation":[
+        {
+            "cardType":"move",
+            "moveData":
+            {
+                "movePos":null,
+                "range":1
+            }
+        },
+        {
+            "cardType":"attack",
+            "attackData":
+            {
+                "damage":4,
+                "times":1,
+                "damageType":"physical",
+                "pattern":"tile",
+                "range":2,
+
+                "statusEffect":[]
+            }
+        }
+    ]
+    
+                   
+}

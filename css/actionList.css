@@ -1,0 +1,66 @@
+/*Action List and div*/
+
+#actionDIV{
+    position: relative;
+    top: 144px;
+    left: 950px;
+    z-index: -1;
+}
+
+#actionList{
+    list-style: none;
+    padding:0;
+    z-index: 0;
+}
+
+#actionList li{
+    padding:0;
+    margin: calc(var(--scale) *20px) calc(var(--scale) *0);
+    height: calc(var(--scale) *140px);
+    width:calc(var(--scale) *1200px);
+    /*background-color:rgb(152, 153, 153);*/
+    
+    background-image: url('../art/UI/sword.png');
+    background-repeat: no-repeat;
+    background-size: calc(var(--scale) *570px) calc(var(--scale) *140px);
+    background-position: calc(var(--scale) *60px);
+
+    overflow-x:visible;
+    overflow-y: visible;
+
+
+}
+
+#actionList li div{
+    display:inline-block;
+}
+
+#actionList li .Card{
+    z-index: 1;
+    margin: 0 9px;
+    vertical-align: middle;
+    height: calc(var(--scale) *142px);
+}
+
+#actionList li .Card:nth-child(2){
+    margin: 0 9px 0 9px;
+    margin-left: 80px;
+    
+}
+
+#displayIndex{
+    position: absolute;
+    font-size:calc(var(--scale) *3em);
+
+    width: calc(var(--scale) *50px);
+    height:calc(var(--scale) *140px);
+    line-height: calc(var(--scale) *140px);
+
+    text-align: center;
+    vertical-align: middle;
+    line-height: calc(var(--scale) *140px);
+
+  
+    font-family: "comic-sans";
+    font-weight: bolder;
+}

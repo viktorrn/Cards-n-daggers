@@ -1,0 +1,43 @@
+|Fixed|
+
+    Date: 9/6-2021
+
+    <Gameplay>
+
+        "You can now get extra cardslots as a encounter reward"
+
+        <Player>
+
+            Saguiana:
+
+                Added Cards:
+
+                    Common:
+                        
+
+                    Rare:
+                    
+                        
+
+                Starting Hand
+
+                    The starting hand now consists of:
+                        
+                        2x Stab
+                        1x Pistol Shot
+                        1x Hip Fire
+                        
+                        2x Block
+                        
+                        1x Step
+                        1x Dash
+
+
+    <UI>
+
+
+
+    <Backend nerd stuff>
+        enemy action economy
+        mutation cards for player
+        

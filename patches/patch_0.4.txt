@@ -1,0 +1,57 @@
+|Hot fix|
+    Date: 3/5-2021
+
+    [Gameplay]
+
+        <Tick tock, tick tock>
+
+            Run now ends after 7 encounters, and you heal 12 hp after each encounter
+
+        <Player>
+            
+            Saguiana:
+
+                *Base Health 40 -> 42
+
+                *Starting hand changed
+
+                    The starting hand now consists of:
+                        *2x -> 3x Stab
+                        *1x -> 2x Pistol Shot
+                        1x Block
+                        1x Riposte 
+                        1x Step
+                        1x Dash
+
+|Fixed stuff|
+
+    Date: 2/5-2021
+
+    [Gameplay]
+        
+        <Player>
+            
+            Saguiana:
+
+                *Starting hand changed
+
+                    The starting hand now consists of:
+                        2x Stab
+                        1x Pistol Shot
+                        1x Block
+                        1x Riposte (happy now rasmus?)
+                        1x Step
+                        1x Dash
+
+                    - Hipfire
+                    - 2x Reload
+
+        <ActionList>
+            You can now remove cards from ActionList without em bitching about you having to pick where to play
+
+    [UI]
+        Buncha small stuff regarding card handling tweaked
+
+    [Backend nerd stuff]
+        - Recalibrate the card scoring
+        - Boardentities are not attached to tiles no longer ( preping em animations )

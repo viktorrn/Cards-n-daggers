@@ -1,0 +1,38 @@
+|Fixed|
+
+    Date: 31/5-2021
+
+    <Gameplay>
+
+        1x New Enemy
+
+            + Hunter 
+
+                Health: 19
+
+                "A long ranged Marksman who marks their pray before taking them down from a far"
+
+                1x Hunters Mark
+                    Mental. Apply 2 Mark {the extra marked damage doenst show up on the card damage as of now}
+
+                2x Arrow Rain
+                    Deal 2 times 3 damage
+
+                1x Dash & Roll
+                    Move distance 2
+
+
+    <Card conditions>
+
+        Mental, cannot be blocked
+
+    <statusEffects>
+
+            + Mark
+                Next incoming attack deals 150%, decrements by 1 after getting hit or after set             
+
+
+    <Backend nerd stuff>
+
+        *Tweeked the enemies scoring of actions, like choosing a card
+        + Enemies now have preferred distances which dictates where and how they move

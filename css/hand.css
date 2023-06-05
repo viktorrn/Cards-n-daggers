@@ -1,0 +1,83 @@
+/*Hand*/
+
+#hand-section{
+    position: fixed;
+    bottom:0;
+    z-index: 200;
+}
+
+.hand .Card{
+    margin: 20px 10px;
+    z-index: 400;
+    position: relative;
+}
+
+.hand{
+
+    /*Positional info*/
+    z-index: 400;
+    position: fixed;
+    bottom: calc(var(--scale) *0px);
+    left:49%;
+    width: 2%;
+    overflow: visible;
+
+    /*content layout*/
+    display: flex;
+    justify-content: center;
+
+    /*animation */
+    transition: border-top 0.15s;
+}
+
+
+#show-drawPile, #show-discardPile{
+    position: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+
+    transition: transform 0.15s, border 0.1s;
+    transition-timing-function: cubic-bezier(.17,.42,.12,2); 
+    text-align: center;
+
+    font-size: 4em;
+    color:white;
+    -webkit-text-stroke: 5px rgb(0, 0, 0);
+    
+}
+
+#show-drawPile{
+    bottom: 30px;
+    left: 30px;
+    height: 70px;
+    width:175px;
+    height:120px;
+
+    line-height: 100px;
+    background-image: url('../art/UI/drawPile.png');
+}
+
+#show-discardPile{
+    bottom: 30px;
+    right: 70px;
+    height: 70px;
+    width:130px;
+    height:130px;
+
+    line-height: 120px;
+    background-image: url('../art/UI/discardPile.png');
+}
+
+#show-drawPile:hover, #show-discardPile:hover{
+    transform: scale(1.1,1.1);
+}
+
+
+#show-shatterPile{
+    position: fixed;
+    bottom: 170px;
+    right: 30px;
+    height: 70px;
+}
+

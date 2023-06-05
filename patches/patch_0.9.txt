@@ -1,0 +1,79 @@
+|Fixed|
+
+    "Stuff do be early, neet"
+
+    Date: 9/6-2021
+
+    <Gameplay>
+
+        <Card condition>
+
+            +Shatter
+                "The card can only be played once per encounter"
+
+        <Player>
+
+            Saguiana:
+
+                Added Cards:
+
+                    Common:
+                        Shadow Stab
+                            Priority 0
+                            "Deal 7 damage"
+
+                        Quick Jab
+                            Priority 1
+                            "Deal 6 damage, critical on bleeding target"
+
+                        Steady Fire 
+                            Priority 1
+                            "Deal 6 damage, apply 3 bleed"
+
+                    Rare:
+                        Blood Lust
+                            Priority 2
+                            "Apply 5 bleed to all enemies"
+
+                        Execute
+                            Priority 2
+                            "Deal 13 damage, critical on bleeding target. Shatter"
+
+
+                        Ace 
+                            Priority 2
+                            "Deal 16 damage. Apply 3 weak. Shatter"
+                        
+
+                Starting Hand
+
+                    The starting hand now consists of:
+                        
+                        2x Stab
+                        1x Pistol Shot
+                        1x Hip Fire
+                        
+                        2x Block
+                        
+                        1x Step
+                        1x Dash
+
+
+                *Heal after encounter
+                    6->10 Health
+    
+    <UI>
+
+        Screen After encounter got spiced up
+
+    <Backend nerd stuff>
+        More art, as well as a loot-drop system
+        Rare cards droprate is calculated as:
+
+            if(RandomValue()*5 - "encounters since last picked rare" <= 1)
+
+        meaning that a rare is garunteed after the fifth encounter
+        
+
+        
+        

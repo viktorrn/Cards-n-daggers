@@ -1,0 +1,68 @@
+
+{
+    "type":"statusEffect",
+    "statusEffects":[
+    {
+        "name":"bleed",
+        "type": "debuff",
+        "effectType":"apply",
+        "procFlag": "endOfSet",
+        "targetCondition":"none",
+        "valueChange" : "endOfSet"
+    
+    },{
+
+        "name":"critical",
+        "type": "buff",
+        "effectType":"use",
+        "procFlag": "hit",
+        "targetCondition":"none",
+        "valueChange" : "use"
+
+    },{
+
+        "name":"ammo",
+        "type":"buff",
+        "effectType":"state",
+        "procFlag":"playedCard",
+        "targetCondition":"none",
+        "valueChange":"use"
+
+    },{
+
+        "name":"sharpen",
+        "type":"buff",
+        "effectType":"state",
+        "procFlag":"playedCard",
+        "targetCondition":"none",
+        "valueChange":"endOfSet"
+
+    },{
+
+        "name":"frenzy",
+        "type":"buff",
+        "effectType":"state",
+        "procFlag":"playedCard",
+        "targetCondition":"none",
+        "valueChange":"endOfSet"
+    },{
+
+        "name":"weak",
+        "type":"debuff",
+        "effectType":"apply",
+        "procFlag":"playedCard",
+        "targetCondition":"none",
+        "valueChange":"endOfSet"
+
+    },{
+        "name":"mark",
+        "type": "buff",
+        "effectType":"apply",
+        "procFlag": "hit",
+        "targetCondition":"none",
+        "valueChange" : "endOfSet"
+    },{
+        "name":"shatter"
+    }
+    ]
+}

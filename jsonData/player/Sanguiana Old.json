@@ -1,0 +1,405 @@
+{
+    
+
+    "name":"Sanguiana",
+    "type":"entity",
+    "entityType":"Player",
+
+    "health": 42,
+    "color":"#581a91",
+    "imgPath":"../art/characters/Sanguiana.png",
+    
+    "statusEffects":[],
+    "list":[
+        "Stab",
+        "Stab",
+        "Pistol Shot",
+        "Hip Fire",
+        "Open Wounds",
+        "Step",
+        "Dash",
+        "Block",
+        "Block"
+    ],
+    "startingHand":[
+        "Dash","Dash","Dash","Ace","Pistol Shot"
+    ],
+    "cardTable":[
+        {
+            "rarity":"common",
+            "cards":[
+                "Shadow Stab",
+                "Reload",
+                "Sharpen",
+                "Quick Cuts",
+                "Steady Fire",
+                "Quick Jab"
+            ]
+        },
+        {
+            "rarity":"rare",
+            "cards":[
+                "Blood Lust",
+                "Dash & Roll",
+                "Execute",
+                "Ace"
+            ]
+        }
+    ],
+    "cards":[
+        {
+            "cardType":"attack",
+            "cards":
+            [
+                {   "name":"Stab",
+                    
+                    "weigth":0,
+                    "playDuration":1,
+                    "text":"Deal {damage} damage, apply 2 bleed",
+                    
+                    "attackData":
+                    
+                        {
+                            "damage":6,
+                            "times":1,
+                            "damageType":"physical",
+                            "pattern":"tile",
+                            "range":1,
+
+                            "statusEffect":[
+                                {
+                                    "name":"bleed",
+                                    "value":2
+                                }
+                            ]
+                        }
+                },{ "name":"Hip Fire",
+                    "weigth":0,
+                    "playDuration":1,
+                    "text":"Deal {damage} times 1+X ammo damage",
+
+                    "attackData":
+                    
+                        {
+                            "damage":4,
+                            "times":1,
+                            "damageType":"physical",
+                            "pattern":"target",
+                            "range":2,
+
+                            "statusEffect":[
+                            ]
+                        }
+                },{ "name":"Pistol Shot",
+                    "weigth":0,
+                    "playDuration":1,
+                    "text":"Deal {damage} damage, apply 3 bleed",
+
+                    "attackData":{
+                            "damage":3,
+                            "times":1,
+                            "damageType":"physical",
+                            "pattern":"target",
+                            "range":4,
+                            
+                            "statusEffect":[
+                                {
+                                    "name":"bleed",
+                                    "value":3
+                                }
+                            ]
+                        }
+                },{ "name":"Open Wounds",
+                    
+                    "weigth":0,
+                    "playDuration":1,
+                    "text":"Proc all enemies bleed",
+                    
+                    "attackData":
+                    
+                        {
+                            "damage":0,
+                            "times":1,
+                            "damageType":"statusEffect",
+                            "pattern":"all",
+                            "range":0,
+
+                            "statusEffect":[
+                            
+                            ]
+                        }
+
+                },{ "name":"Shadow Stab",
+                    
+                    "weigth":0,
+                    "playDuration":0,
+                    "text":"Deal {damage} damage",
+                    
+                    "attackData":
+                    
+                        {
+                            "damage":7,
+                            "times":1,
+                            "damageType":"physical",
+                            "pattern":"tile",
+                            "range":1,
+
+                            "statusEffect":[
+                               
+                            ]
+                        }
+
+                },{ "name":"Quick Cuts",
+                    
+                    "weigth":0,
+                    "playDuration":1,
+                    "text":"Deal {damage} times 5 damage",
+                    
+                    "attackData":
+                    
+                        {
+                            "damage":2,
+                            "times":5,
+                            "damageType":"physical",
+                            "pattern":"tile",
+                            "range":1,
+
+                            "statusEffect":[
+                               
+                            ]
+                        }
+
+                },{ "name":"Quick Jab",
+                    
+                    "weigth":0,
+                    "playDuration":0,
+                    "text":"Deal {damage} damage, critical on bleeding target",
+
+                    "attackData":
+                    
+                        {
+                            "damage":6,
+                            "times":1,
+                            "damageType":"physical",
+                            "pattern":"tile",
+                            "range":1,
+
+                            "statusEffect":[
+                                {
+                                    "name":"critical",
+                                    "value":2,
+                                    "targetCondition":"bleed"
+                                }
+                            ]
+                        }
+
+                },{ "name":"Steady Fire",
+                    "weigth":0,
+                    "playDuration":1,
+                    "text":"Deal {damage} damage, apply 3 bleed",
+
+                    "attackData":{
+                            "damage":6,
+                            "times":1,
+                            "damageType":"physical",
+                            "pattern":"target",
+                            "range":4,
+                            
+                            "statusEffect":[
+                                {
+                                    "name":"bleed",
+                                    "value":3
+                                }
+                            ]
+                        }
+                },
+                
+                { "name":"Blood Lust",
+                    
+                    "weigth":0,
+                    "playDuration":2,
+                    "text":"Apply 4 bleed to all enemies",
+                    "rare":true,
+                    
+                    "attackData":
+                    
+                        {
+                            "damage":0,
+                            "times":1,
+                            "damageType":"mental",
+                            "pattern":"all",
+                            "range":0,
+
+                            "statusEffect":[
+                                {
+                                    "name":"bleed",
+                                    "value":4
+                                }
+                            ]
+                        }
+
+                },{ "name":"Execute",
+                    "weigth":0,
+                    "playDuration":2,
+                    "text":"Deal {damage} damage, critical on bleeding target. Shatter",
+                    "rare":true,
+
+                    "attackData":{
+                            "damage":13,
+                            "times":1,
+                            "damageType":"physical",
+                            "pattern":"tile",
+                            "range":1,
+                            
+                            "statusEffect":[
+                                {
+                                    "name":"critical",
+                                    "value":2,
+                                    "targetCondition":"bleed"
+                                },{
+                                    "name":"shatter",
+                                    "value":1
+                                }
+                            ]
+                        }
+                },{ "name":"Ace",
+                    "weigth":0,
+                    "playDuration":2,
+                    "text":"Deal {damage} damage. Apply 3 weak. Shatter",
+                    "rare":true,
+
+                    "attackData":{
+                            "damage":16,
+                            "times":1,
+                            "damageType":"physical",
+                            "pattern":"target",
+                            "range":5,
+                            
+                            "statusEffect":[
+                                {
+                                    "name":"weak",
+                                    "value":3
+                                },{
+                                    "name":"shatter",
+                                    "value":1
+                                }
+                            ]
+                        }
+                }  
+            ]
+        },{
+            "cardType":"move",
+            "cards":
+            [
+                {   "name":"Dash",
+                    "weigth":0,
+                    "playDuration":0,
+                    "text":"Movedistance {step}",
+
+                    "moveData":
+                    
+                        {
+                            "movePos":null,
+                            "range":1
+                        }
+
+                },{ "name":"Step",
+                    "weigth":0,
+                    "playDuration":1,
+                    "text":"Movedistance {step}",
+
+                    "moveData":
+                    
+                        {
+                            "movePos":null,
+                            "range":3
+                        }
+                },{ "name":"Dash & Roll",
+
+                    "weigth":2,
+                    "playDuration":0,
+                    "text":"Movedistance {step}",
+                    "rare":true,
+
+                    "moveData":
+                    
+                        {
+                            "movePos":null,
+                            "range":2
+                        }
+    
+                   
+                }
+            ]
+        },{
+            "cardType":"block",
+            "cards":
+            [
+                {   "name":"Block",
+                    "weigth":0,
+                    "playDuration":0,
+                    "text":"Block all damage",
+                    
+                    "blockData":{
+                        "type":"block"
+                    }
+
+                },{ "name":"Riposte",
+                    "weigth":0,
+                    "playDuration":0,
+                    "text":"parry all damage, if attacked deal {damage} damage to attacker",
+
+                    "blockData":{
+                        "type":"parry",
+                        "parryData":
+                        {
+                            "name":"Riposte",
+                            "cardType":"attack",
+                            "playDuration":1,
+                            "attackData":{
+
+                                "damage":4,
+                                "damageType":"physical",
+                                "times":1,
+                                "statusEffect":[]
+                            }
+                            
+                        }    
+                    }
+                               
+                }
+            ]
+        },{
+            "cardType":"state",
+            "cards":[
+                { "name":"Reload",
+                    "weigth":0,
+                    "playDuration":0,
+                    "text":"Gain 2 ammo",
+                    
+                    "stateData":{
+                        "statusEffect":[
+                            {
+                                "name":"ammo",
+                                "value":2
+                            }
+                        ]
+                    }
+                },{ "name":"Sharpen",
+                    "weigth":0,
+                    "playDuration":0,
+                    "text":"Gain 3 Sharpen",
+                    
+                    "stateData":{
+                        "statusEffect":[
+                            {
+                                "name":"sharpen",
+                                "value":3
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}
